@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    background-image: url('../img/background.jpg'); /* Ruta
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    color: white;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+#computadora-cartas, #jugador-cartas {
+    height: 240px;
+}
+@keyframes entradaCarta {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.carta {
+    transition: transform 0.3s ease-in-out;
+}
+.carta-animada {
+    animation: entradaCarta 0.5s ease-out;
+}
+.ganar-animacion {
+    background: url('assets/gif/ganar.gif') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+.transition {
+    transition: transform 0.3s ease-in-out;
+}
+.transition {
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes entradaCartaIzquierda {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.carta-animada-izquierda {
+    animation: entradaCartaIzquierda 0.5s ease-out;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+.black-jacket-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-jacket-container h1 {
+    margin: 0 20px;
+}
+
+.black-jacket-container img {
+    max-height: 100px; /* Ajusta según sea necesario */
+}
+
+.gif-left {
+    margin-right: 20px;
+}
+
+.gif-right {
+    margin-left: 20px;
+    transform: scaleX(-1); /* Reflejar horizontalmente */
+}

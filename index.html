@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackjack</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="black-jacket-container">
+    <img src="assets/img/giphy.gif" alt="GIF animado" class="gif-left">
+    <h1>Blackjack</h1>
+    <img src="assets/img/giphy.gif" alt="GIF animado" class="gif-right">
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col text-center">
+        <label for="numJugadores">Número de Jugadores:</label>
+        <select id="numJugadores">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <button id="btnPedir">Pedir Carta</button>
+        <button id="btnDetener">Detener</button>
+        <button id="btnNuevo">Nuevo Juego</button>
+      </div>
+    </div>
+    <div id="jugadores" class="row mt-4">
+      <!-- Aquí se añadirán dinámicamente los jugadores -->
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <h2>DEALER - <small id="computadora-puntos">0</small></h2>
+        <div id="computadora-cartas" class="cartas">
+          <!-- Aquí se añadirán las cartas de la computadora dinámicamente -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/juego.js"></script>
+</body>
+</html>
